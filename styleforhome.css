@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh; /* Allows scrolling if content grows */
+   overflow-y: auto; /* Enables vertical scrolling */
+   margin: 0;
+   color: #00ffcc;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   overflow-y: auto;
+    position: relative;
+}
+/* Background Video */
+.background-video {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+   filter: blur(3px);
+}
+.container {
+   padding: 20px;
+   border-radius: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.6);
+}
+h2 {
+   font-size: 28px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+/* Social Cards */
+.social-links {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   margin-top: 20px;
+}
+.social-card {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   padding: 15px;
+   width: 350px;
+   background: linear-gradient(145deg, #222, #111);
+   border: 1px solid rgba(0, 255, 204, 0.6);
+   border-radius: 8px;
+   text-decoration: none;
+   color: #00ffcc;
+   font-size: 18px;
+   font-weight: 500;
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   font-family: 'Times New Roman', serif;
+}
+.social-card:hover {
+   transform: scale(1.05);
+   box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.8);
+}
+
+/* Icon Styling */
+.icon {
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   background: rgba(0, 255, 204, 0.2);
+   border-radius: 50%;
+   transition: transform 0.3s ease-in-out;
+}
+.icon img {
+   width: 60%;
+   height: 60%;
+   object-fit: contain;
+}
+.social-card:hover .icon {
+   transform: rotate(360deg);
+}
+
+/* Specific Icon Colors */
+.linkedin .icon { background: #0077b5; }
+.instagram .icon { background: #E4405F; }
+github .icon { background: #333; }
+gmail .icon { background: #D44638; }
+snapchat .icon { background: #FFFC00; }
+spotify .icon { background: #1DB954; }
+facebook .icon { background: #1877F2; }
+youtube .icon { background: #FF0000; }
